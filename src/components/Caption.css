@@ -1,0 +1,163 @@
+.caption-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    /* background: #2d2d2d; */
+    min-height: 100vh;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #444;
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin: 0;
+    color: #000;
+  }
+  
+  .controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+    align-items: center;
+  }
+  
+  .caption-input {
+    flex: 1;
+    min-width: 200px;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background: #3a3a3a;
+    color: #ffffff;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  .caption-input:focus {
+    border-color: #00aaff;
+  }
+  
+  .button-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  
+  button {
+    padding: 8px 15px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    background: #00aaff;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.1s;
+  }
+  
+  button:hover {
+    background: #0088cc;
+  }
+  
+  button:active {
+    transform: scale(0.98);
+  }
+  
+  .back-button {
+    background: #666;
+  }
+  
+  .back-button:hover {
+    background: #555;
+  }
+  
+  .color-download-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .color-picker {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  input[type="color"] {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border: 2px solid #444;
+    border-radius: 5px;
+    background: none;
+    cursor: pointer;
+  }
+  
+  .download-btn {
+    background: #00cc66;
+  }
+  
+  .download-btn:hover {
+    background: #00aa55;
+  }
+  
+  .canvas-container {
+    background: #1a1a1a;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    margin: 0 auto;
+    width: 100%;
+    max-width: 800px;
+  }
+  
+  @media (max-width: 900px) {
+    .canvas-container {
+      max-width: 100%;
+    }
+    
+    .controls {
+      flex-direction: column;
+      align-items: stretch;
+    }
+    
+    .button-group {
+      justify-content: center;
+    }
+    
+    .color-download-group {
+      justify-content: center;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .header {
+      flex-direction: column;
+      gap: 10px;
+      text-align: center;
+    }
+    
+    button {
+      padding: 6px 12px;
+      font-size: 12px;
+    }
+    
+    .caption-input {
+      font-size: 14px;
+    }
+    
+    h1 {
+      font-size: 20px;
+    }
+  }
+  
