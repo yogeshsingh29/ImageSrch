@@ -54,8 +54,8 @@ const SearchPage = ({ onImageSelect }) => {
   return (
     <div className="search-page">
       <div className="user-Data">
-        <span>Name : yogesh</span>
-        <span>Email : yogesh@gmail.com</span>
+        <span>Name : Yogesh Singh</span>
+        <a href="mailto:yogeshsingh0076@gmail.com">Email: yogeshsingh0076@gmail.com</a>
       </div>
 
       {error && <p className="error">{error}</p>}
