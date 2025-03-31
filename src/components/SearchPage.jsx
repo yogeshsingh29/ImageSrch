@@ -87,6 +87,20 @@ const SearchPage = ({ onImageSelect }) => {
         ) : (
           <p>No images found.</p>
         )}
+
+        <div style={{display:"flex", flexDirection:"column"}}>
+        <p style={{ textAlign: 'left', color: 'black', display:"flex", flexDirection:"column" }}>
+              <strong>STEPS TO USE:</strong>
+            </p>
+            <ol style={{ textAlign: 'left', color: 'black' }}>
+              <li>Step 1: Search for an image (e.g., mango, cake, etc.)</li>
+              <li>Step 2: Click "Add Caption"</li>
+              <li>Step 3: Type your caption in the provided text box</li>
+              <li>Step 4: Select a shape (e.g., triangle, circle, rectangle, etc.), and customize its color and size as desired</li>
+              <li>Step 5: Add any text you like, and adjust the text size and positioning</li>
+              <li>Step 6: Click the "Download" button to save your edited image</li>
+            </ol>
+        </div>
       </div>
     </div>
   );
